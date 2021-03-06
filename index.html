@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let soTienVay = prompt("Nhập số tiền muốn vay: ")
+        soTienVay = Number(soTienVay)
+        let laiSuat = prompt("Nhập lãi suất (%/năm): ")
+        laiSuat = Number(laiSuat)
+        let soNam = prompt("Nhập số năm: ")
+        soNam = Number(soNam)
+        let tienLai = (soTienVay*laiSuat)/100 * soNam
+        let tongCong = tienLai + soTienVay
+        alert(`Số tiền lãi bạn phải trả là ${tienLai}`)
+        alert(`Tổng cộng số tiền bạn phải trả (cả lãi lẫn vay) là ${tongCong}`)
+    </script>
+</body>
+
+</html>
